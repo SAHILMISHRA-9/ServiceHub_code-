@@ -1,14 +1,5 @@
 {
-  "builds": [
-    {
-      "src": "dist/spa/**/*",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/dist/spa/$1"
-    }
-  ]
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/spa",
+  "framework": "vite"
 }
